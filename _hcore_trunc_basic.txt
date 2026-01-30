@@ -1,0 +1,102 @@
+
+==================== TRUNC VIEW: low64 (|bits|=64) ====================
+
+=== Differential distinguisher search (train/holdout) ===
+mode=x width=136 diff_type=xor out_diff=xor
+key_samples=2 train=300 test=300 deltas=96
+
+-- key[0] --
+train: N=300  best_bias=0.103333  p1=0.603333  z=+3.58  expected_extreme~0.125276
+test : N=300   bias=0.033333  p1=0.533333  z=+1.15
+best_delta = 0x2000000
+best_out_bit = 33
+
+-- key[1] --
+train: N=300  best_bias=0.106667  p1=0.606667  z=+3.70  expected_extreme~0.125276
+test : N=300   bias=0.003333  p1=0.496667  z=-0.12
+best_delta = 0x10000000000000000000000
+best_out_bit = 43
+
+=== Differential distinguisher search (train/holdout) ===
+mode=h width=130 diff_type=xor out_diff=xor
+key_samples=2 train=300 test=300 deltas=96
+
+-- key[0] --
+train: N=300  best_bias=0.116667  p1=0.616667  z=+4.04  expected_extreme~0.125276
+test : N=300   bias=0.000000  p1=0.500000  z=+0.00
+best_delta = 0x200000000
+best_out_bit = 34
+
+-- key[1] --
+train: N=300  best_bias=0.110000  p1=0.390000  z=-3.81  expected_extreme~0.125276
+test : N=300   bias=0.020000  p1=0.520000  z=+0.69
+best_delta = 0x100000000000000000000
+best_out_bit = 3
+
+==================== TRUNC VIEW: low128 (|bits|=128) ====================
+
+=== Differential distinguisher search (train/holdout) ===
+mode=x width=136 diff_type=xor out_diff=xor
+key_samples=2 train=300 test=300 deltas=96
+
+-- key[0] --
+train: N=300  best_bias=0.106667  p1=0.393333  z=-3.70  expected_extreme~0.129805
+test : N=300   bias=0.013333  p1=0.486667  z=-0.46
+best_delta = 0x100000000000000
+best_out_bit = 38
+
+-- key[1] --
+train: N=300  best_bias=0.103333  p1=0.603333  z=+3.58  expected_extreme~0.129805
+test : N=300   bias=0.013333  p1=0.513333  z=+0.46
+best_delta = 0x400000000000000
+best_out_bit = 82
+
+=== Differential distinguisher search (train/holdout) ===
+mode=h width=130 diff_type=xor out_diff=xor
+key_samples=2 train=300 test=300 deltas=96
+
+-- key[0] --
+train: N=300  best_bias=0.116667  p1=0.383333  z=-4.04  expected_extreme~0.129805
+test : N=300   bias=0.000000  p1=0.500000  z=+0.00
+best_delta = 0x175c0ca85c4db1f7beacb35d41c9a4ab8
+best_out_bit = 32
+
+-- key[1] --
+train: N=300  best_bias=0.116667  p1=0.616667  z=+4.04  expected_extreme~0.129805
+test : N=300   bias=0.003333  p1=0.496667  z=-0.12
+best_delta = 0x400000000000000000000000
+best_out_bit = 73
+
+==================== TRUNC VIEW: clamp_r_bits (|bits|=106) ====================
+
+=== Differential distinguisher search (train/holdout) ===
+mode=x width=136 diff_type=xor out_diff=xor
+key_samples=2 train=300 test=300 deltas=96
+
+-- key[0] --
+train: N=300  best_bias=0.116667  p1=0.616667  z=+4.04  expected_extreme~0.128588
+test : N=300   bias=0.020000  p1=0.480000  z=-0.69
+best_delta = 0x2be94a512ec74ddd7e63a0514492b9c036
+best_out_bit = 5
+
+-- key[1] --
+train: N=300  best_bias=0.123333  p1=0.623333  z=+4.27  expected_extreme~0.128588
+test : N=300   bias=0.020000  p1=0.480000  z=-0.69
+best_delta = 0x100000000000000000000000000000
+best_out_bit = 119
+
+=== Differential distinguisher search (train/holdout) ===
+mode=h width=130 diff_type=xor out_diff=xor
+key_samples=2 train=300 test=300 deltas=96
+
+-- key[0] --
+train: N=300  best_bias=0.116667  p1=0.383333  z=-4.04  expected_extreme~0.128588
+test : N=300   bias=0.003333  p1=0.503333  z=+0.12
+best_delta = 0x2928cd534d7aca78ef6f8c32342b4fecd
+best_out_bit = 118
+
+-- key[1] --
+train: N=300  best_bias=0.103333  p1=0.603333  z=+3.58  expected_extreme~0.128588
+test : N=300   bias=0.003333  p1=0.496667  z=-0.12
+best_delta = 0x100000000000000000000000
+best_out_bit = 11

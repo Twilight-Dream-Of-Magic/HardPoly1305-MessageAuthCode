@@ -1,0 +1,18 @@
+
+=== 2nd-derivative zero DIAGNOSE ===
+mode=x width=136 full_width=False
+keys=8 points_per_key=8 trials_per_point=128
+total=8192 zeros=0 rate=0.000000e+00
+[single-bit a,b] total=4003 zeros=0 rate=0.000000e+00
+  [single-bit a==b] total=32 zeros=0 rate=0.000000e+00
+  [single-bit a!=b] total=4003 zeros=0 rate=0.000000e+00
+[multi-bit (else)] total=4189 zeros=0 rate=0.000000e+00
+
+=== 2nd-derivative zero DIAGNOSE ===
+mode=h width=130 full_width=False
+keys=8 points_per_key=8 trials_per_point=128
+total=8192 zeros=0 rate=0.000000e+00
+[single-bit a,b] total=3971 zeros=0 rate=0.000000e+00
+  [single-bit a==b] total=28 zeros=0 rate=0.000000e+00
+  [single-bit a!=b] total=3971 zeros=0 rate=0.000000e+00
+[multi-bit (else)] total=4221 zeros=0 rate=0.000000e+00

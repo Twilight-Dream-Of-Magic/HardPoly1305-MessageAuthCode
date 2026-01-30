@@ -1,0 +1,30 @@
+
+=== Linear distinguisher mask-search (train/holdout) ===
+mode=x width=136 dataset_size=8000 mask_trials=8000 key_samples=2
+
+-- key[0] --
+train: N=4000  best_bias=0.029000  p1=0.471000  z=-3.67  expected_extreme~0.034786
+test : N=4000   bias=0.012500  p1=0.512500  z=+1.58
+best_in_bit  = 88
+best_out_bit = 177
+
+-- key[1] --
+train: N=4000  best_bias=0.030000  p1=0.470000  z=-3.79  expected_extreme~0.034786
+test : N=4000   bias=0.003000  p1=0.497000  z=-0.38
+best_in_bit  = 83
+best_out_bit = 141
+
+=== Linear distinguisher mask-search (train/holdout) ===
+mode=h width=130 dataset_size=8000 mask_trials=8000 key_samples=2
+
+-- key[0] --
+train: N=4000  best_bias=0.031500  p1=0.531500  z=+3.98  expected_extreme~0.034786
+test : N=4000   bias=0.004500  p1=0.495500  z=-0.57
+best_in_bit  = 100
+best_out_bit = 238
+
+-- key[1] --
+train: N=4000  best_bias=0.028500  p1=0.471500  z=-3.60  expected_extreme~0.034786
+test : N=4000   bias=0.005000  p1=0.505000  z=+0.63
+best_in_bit  = 58
+best_out_bit = 249

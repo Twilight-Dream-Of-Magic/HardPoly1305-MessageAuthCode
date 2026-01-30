@@ -1,0 +1,26 @@
+
+=== Integral distinguisher (cube XOR-sum) search (train/holdout) ===
+mode=x width=136 k_active=9 candidate_sets=12 train_basepoints=24 test_basepoints=24 key_samples=2
+
+-- key[0] --
+train: N=24  best_bias=0.416667  P0=0.083333  z=-4.08  expected_extreme~0.426303
+test : N=24  bias=0.083333  P0=0.583333  z=+0.82
+best_set_idx=3  best_out_bit=207
+
+-- key[1] --
+train: N=24  best_bias=0.416667  P0=0.916667  z=+4.08  expected_extreme~0.426303
+test : N=24  bias=0.000000  P0=0.500000  z=+0.00
+best_set_idx=7  best_out_bit=198
+
+=== Integral distinguisher (cube XOR-sum) search (train/holdout) ===
+mode=h width=130 k_active=8 candidate_sets=12 train_basepoints=24 test_basepoints=24 key_samples=2
+
+-- key[0] --
+train: N=24  best_bias=0.416667  P0=0.083333  z=-4.08  expected_extreme~0.426303
+test : N=24  bias=0.083333  P0=0.583333  z=+0.82
+best_set_idx=7  best_out_bit=5
+
+-- key[1] --
+train: N=24  best_bias=0.375000  P0=0.875000  z=+3.67  expected_extreme~0.426303
+test : N=24  bias=0.083333  P0=0.416667  z=-0.82
+best_set_idx=3  best_out_bit=174

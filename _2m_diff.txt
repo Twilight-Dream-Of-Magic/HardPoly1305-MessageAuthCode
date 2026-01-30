@@ -1,0 +1,64 @@
+
+=== Differential distinguisher search (train/holdout) ===
+mode=x width=136 diff_type=xor out_diff=xor
+key_samples=2 train=300 test=300 deltas=96
+
+-- key[0] --
+train: N=300  best_bias=0.130000  p1=0.370000  z=-4.50  expected_extreme~0.134181
+test : N=300   bias=0.023333  p1=0.523333  z=+0.81
+best_delta = 0x1000000000000000000000000000
+best_out_bit = 130
+
+-- key[1] --
+train: N=300  best_bias=0.103333  p1=0.396667  z=-3.58  expected_extreme~0.134181
+test : N=300   bias=0.036667  p1=0.536667  z=+1.27
+best_delta = 0x8000000000000000000000000000000000
+best_out_bit = 136
+
+=== Differential distinguisher search (train/holdout) ===
+mode=h width=130 diff_type=xor out_diff=xor
+key_samples=2 train=300 test=300 deltas=96
+
+-- key[0] --
+train: N=300  best_bias=0.130000  p1=0.630000  z=+4.50  expected_extreme~0.134181
+test : N=300   bias=0.066667  p1=0.433333  z=-2.31
+best_delta = 0x2000000000000000000000
+best_out_bit = 12
+
+-- key[1] --
+train: N=300  best_bias=0.116667  p1=0.616667  z=+4.04  expected_extreme~0.134181
+test : N=300   bias=0.003333  p1=0.496667  z=-0.12
+best_delta = 0x800000000000000000
+best_out_bit = 90
+
+=== Differential distinguisher search (train/holdout) ===
+mode=x width=136 diff_type=add out_diff=sub
+key_samples=2 train=300 test=300 deltas=96
+
+-- key[0] --
+train: N=300  best_bias=0.116667  p1=0.616667  z=+4.04  expected_extreme~0.134181
+test : N=300   bias=0.030000  p1=0.530000  z=+1.04
+best_delta = 0x40000000000000000000
+best_out_bit = 66
+
+-- key[1] --
+train: N=300  best_bias=0.116667  p1=0.383333  z=-4.04  expected_extreme~0.134181
+test : N=300   bias=0.043333  p1=0.456667  z=-1.50
+best_delta = 0xaebc9838d0c365a13fa0cdfd498054ab1c
+best_out_bit = 66
+
+=== Differential distinguisher search (train/holdout) ===
+mode=h width=130 diff_type=add out_diff=sub
+key_samples=2 train=300 test=300 deltas=96
+
+-- key[0] --
+train: N=300  best_bias=0.120000  p1=0.380000  z=-4.16  expected_extreme~0.134181
+test : N=300   bias=0.000000  p1=0.500000  z=+0.00
+best_delta = 0x100000000000000000000000000000
+best_out_bit = 50
+
+-- key[1] --
+train: N=300  best_bias=0.130000  p1=0.630000  z=+4.50  expected_extreme~0.134181
+test : N=300   bias=0.020000  p1=0.480000  z=-0.69
+best_delta = 0x6b9effbdb09b1f84b8418184512a29a1
+best_out_bit = 2
